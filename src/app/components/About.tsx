@@ -14,7 +14,7 @@ const fadeUp = {
 
 const AboutSection: React.FC = () => {
   const paragraphs = [
-    `Finding time and opportunities to care for ourselves can be incredibly challenging in today&apos;s busy and demanding world. I believe therapy offers a dedicated space for self care, providing the support and tools needed to improve this essential practice.`,
+    `Finding time and opportunities to care for ourselves can be incredibly challenging in today's busy and demanding world. I believe therapy offers a dedicated space for self care, providing the support and tools needed to improve this essential practice.`,
     ` Dr. Serena Blake is a licensed clinical psychologist (PsyD) based in Los Angeles, CA, with eight years of experience and over 500 client sessions. She blends evidence-based approaches—like cognitive-behavioral therapy and mindfulness—with compassionate, personalized care to help you overcome anxiety, strengthen relationships, and heal from trauma. Whether you meet in her Maplewood Drive office or connect virtually via Zoom, Dr. Blake is committed to creating a safe, supportive space for you to thrive.`,
     `Her approach is primarily psychodynamic and humanistic, enriched with positive psychology, existentialism, family systems, ACT, and mindfulness.`,
     `“Therapy can be a space where you invest in yourself—one of the highest forms of self care.”`,

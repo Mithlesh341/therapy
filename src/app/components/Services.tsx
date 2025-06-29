@@ -17,19 +17,6 @@ const services = [
   },
 ];
 
-const fadeIn = {
-  hidden: { opacity: 0, y: 30 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: i * 0.2,
-      duration: 0.6,
-      ease: 'easeOut',
-    },
-  }),
-};
-
 const Services = () => {
   return (
     <section className="py-16 bg-gray-50 px-6">
@@ -39,11 +26,10 @@ const Services = () => {
           <motion.div
             key={i}
             className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
-            initial="hidden"
-            whileInView="visible"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: i * 0.2, duration: 0.6, ease: 'easeOut' }}
             viewport={{ once: true }}
-            variants={fadeIn}
-            custom={i}
           >
             <h3 className="text-xl font-semibold mb-3 text-gray-800">{service.title}</h3>
             <p className="text-gray-600">{service.description}</p>

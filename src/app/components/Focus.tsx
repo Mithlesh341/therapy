@@ -33,15 +33,6 @@ const AREAS: FocusArea[] = [
   },
 ];
 
-const fadeIn = {
-  hidden: { opacity: 0, y: 30 },
-  visible: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: { delay: i * 0.2, duration: 0.6, ease: 'easeOut' },
-  }),
-};
-
 const AreasOfFocus: React.FC = () => (
   <section className="py-16 px-4 bg-gray-50">
     <div className="max-w-6xl mx-auto text-center mb-12">
@@ -55,11 +46,10 @@ const AreasOfFocus: React.FC = () => (
         <motion.div
           key={area.title}
           className="flex flex-col items-center text-center px-4"
-          initial="hidden"
-          whileInView="visible"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: i * 0.2, duration: 0.6, ease: 'easeOut' }}
           viewport={{ once: true }}
-          variants={fadeIn}
-          custom={i}
         >
           {area.imgSrc && (
             <div className="w-72 h-72 mb-4 rounded-full overflow-hidden bg-gray-200">

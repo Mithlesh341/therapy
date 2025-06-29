@@ -2,26 +2,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const fadeInUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.8, ease: 'easeOut' },
-  },
-};
-
 const RatesAndInsurance: React.FC = () => (
   <>
     <motion.section
       className="bg-blue-200 text-gray-800 py-16 px-4"
-      initial="hidden"
-      whileInView="visible"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
       viewport={{ once: true }}
-      variants={fadeInUp}
     >
       <div className="max-w-4xl mx-auto space-y-10">
-      
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-semibold mb-4">Rates and Insurance</h2>
           <p className="text-lg max-w-2xl mx-auto">
@@ -63,10 +53,10 @@ const RatesAndInsurance: React.FC = () => (
 
     <motion.div
       className="text-center mt-20 mb-20"
-      initial="hidden"
-      whileInView="visible"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
       viewport={{ once: true }}
-      variants={fadeInUp}
     >
       <p className="text-black font-semibold text-xl md:text-2xl">
         Please note: I am not currently accepting new clients.
