@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const Footer = () => (
   <footer className="py-12 bg-gray-100 px-6 text-center text-gray-700">
     <div className="space-y-1">
@@ -6,9 +8,9 @@ const Footer = () => (
       <p>28175 Haggerty Rd, Novi, MI 48377</p>
     </div>
     <div className="mt-6 space-x-4">
-      <a href="/">Home</a>
-      <a href="https://www.drjenniferhahm.com/good-faith-estimate">Good Faith Estimate</a>
-      <a href="https://drjenniferhahm.sessionshealth.com/">Client Portal</a>
+      <Link href="/">Home</Link>
+      <Link href="https://www.drjenniferhahm.com/good-faith-estimate">Good Faith Estimate</Link>
+      <Link href="https://drjenniferhahm.sessionshealth.com/">Client Portal</Link>
     </div>
     <p className="mt-4 text-sm">© {new Date().getFullYear()} Dr. Serena Blake, PsyD (Clinical Psychologist), PLLC. All rights reserved.</p>
   </footer>

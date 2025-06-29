@@ -4,14 +4,14 @@ import ReCAPTCHA from 'react-google-recaptcha';
 
 
 const Contact = () => {
-  const recaptchaRef = useRef<ReCAPTCHA>(null);
+  //const recaptchaRef = useRef<ReCAPTCHA>(null);
   const [verified, setVerified] = useState(false);
 
   const handleRecaptcha = (value: string | null) => {
     setVerified(!!value);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (_e: React.FormEvent) => {
     //e.preventDefault();
     if (!verified) {
       alert("Please complete the CAPTCHA");

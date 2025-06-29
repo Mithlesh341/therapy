@@ -45,7 +45,7 @@ const RatesAndInsurance: React.FC = () => (
             I am currently in-network with <strong>BCBS</strong> and <strong>Aetna</strong>. For other plans, I am considered an out-of-network provider.
           </p>
           <p>
-            I’ve partnered with <strong>Mentaya</strong> to help you determine your reimbursement eligibility.
+            I have partnered with <strong>Mentaya</strong> to help you determine your reimbursement eligibility.
           </p>
           <p>
             <a

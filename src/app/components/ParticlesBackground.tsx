@@ -1,10 +1,11 @@
 'use client';
 import React from 'react';
 import Particles from 'react-tsparticles';
+import { Engine } from 'tsparticles-engine';
 import { loadSlim } from 'tsparticles-slim';
 
 const ParticlesSwarm = () => {
-  const particlesInit = async (engine: any) => {
+  const particlesInit = async (engine: Engine) => {
     await loadSlim(engine);
   };
 

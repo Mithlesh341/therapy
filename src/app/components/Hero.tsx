@@ -1,16 +1,21 @@
 import { SiWorldhealthorganization } from "react-icons/si";
 import ParticlesBackground from './ParticlesBackground'; 
+import Link from "next/link";
 
 const Hero = () => {
   return (
     <>
-      <div className="p-5 m-4 flex">
+      <Link href="/">
+
+         <div className="p-5 m-4 flex">
         <SiWorldhealthorganization size={60} />
         <pre className="mt-1 ml-2" >
           Dr. Serena Blake
           <pre>Psychological Services</pre>
         </pre>
       </div>
+      </Link>
+      
 
       <section className="relative h-[75vh] mx-4 bg-white flex items-center justify-center text-black overflow-hidden rounded-xl shadow-lg">
         <ParticlesBackground />
@@ -22,11 +27,11 @@ const Hero = () => {
             Supporting your mental health journey with understanding and
             professionalism.
           </p>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd2yXwQp_mkA-_W86YM4aicZKc0pZlSw2mrA-SGm2GLQvE15g/viewform?usp=dialog" className="cursor-pointer">
+          <Link href="https://docs.google.com/forms/d/e/1FAIpQLSd2yXwQp_mkA-_W86YM4aicZKc0pZlSw2mrA-SGm2GLQvE15g/viewform?usp=dialog" className="cursor-pointer">
                     <button className="mt-6 px-6 py-3 bg-black text-white rounded-full hover:bg-gray-800 transition cursor-pointer">
             Schedule a Consultation
           </button>
-          </a>
+          </Link>
         </div>
       </section>
     </>
