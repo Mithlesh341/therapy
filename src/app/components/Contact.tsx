@@ -1,5 +1,5 @@
 'use client';
-import React, { useRef, useState } from 'react';
+import React, { useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 
 
@@ -11,7 +11,7 @@ const Contact = () => {
     setVerified(!!value);
   };
 
-  const handleSubmit = (_e: React.FormEvent) => {
+  const handleSubmit = () => {
     //e.preventDefault();
     if (!verified) {
       alert("Please complete the CAPTCHA");
