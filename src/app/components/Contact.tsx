@@ -71,7 +71,7 @@ const Contact = () => {
             className="w-full border border-green-800 rounded-md px-4 py-3 placeholder-gray-400"
           />
           <p className="text-sm text-gray-600 mt-1">
-            Let us know when you're typically available for a call or consultation
+            Let us know when you&apos;re typically available for a call or consultation
           </p>
         </div>
 
