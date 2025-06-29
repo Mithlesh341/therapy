@@ -3,7 +3,7 @@ import Link from "next/link"
 const Footer = () => (
   <footer className="py-12 bg-gray-100 px-6 text-center text-gray-700">
     <div className="space-y-1">
-      <p>Jennifer Hahm, Ph.D., Licensed Psychologist</p>
+      <p>Dr. Serena Blake, PsyD (Clinical Psychologist)</p>
       <p><a href="mailto:jennifer@drjenniferhahm.com">serena@blakepsychology.com</a> | Phone: (323) 555-0192 | Fax: (248) 939‑8190</p>
       <p>28175 Haggerty Rd, Novi, MI 48377</p>
     </div>
